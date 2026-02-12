@@ -32,6 +32,18 @@ sudo apt -f install
 sudo systemctl start tpeap
 sudo systemctl enable tpeap
 
+echo "Install nginx and php8.1-fpm"
+sudo apt update
+sudo apt install -y nginx php-fpm php-curl php-mysql git unzip
+sudo systemctl enable nginx
+sudo systemctl start nginx
+sudo systemctl enable php8.1-fpm
+sudo systemctl start php8.1-fpm
+
+
+
+
+
 
 
 
